@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SquareCodeSample</string>
+    <string name="get_employees_endpoint">https://s3.amazonaws.com/</string>
+    <string name="get_employees_valid_data">/sq-mobile-interview/employees.json</string>
+    <string name="get_employees_error_data">/sq-mobile-interview/employees_malformed.json</string>
+    <string name="get_employees_empty_data">/sq-mobile-interview/employees_empty.json</string>
+    <string name="default_font">sans-serif</string>
+    <string name="name_tools_text">Jon Doe</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address:</string>
+    <string name="team">Team</string>
+    <string name="employee_type">Employee Type</string>
+    <string name="biography">Biography</string>
+    <string name="biography_tools_text">Jon is from a small town in Georgia.</string>
+    <string name="employee_type_tools_text">Full-Time</string>
+    <string name="team_tools_text">Falcons</string>
+    <string name="email_tools_text">jon@gmail.com</string>
+    <string name="avatar_image">avatar image</string>
+    <string name="error_tools_text">error</string>
+    <string name="no_results">No Results</string>
+    <string name="work">Work</string>
+    <string name="arrow">Arrow</string>
+    <string name="profile">Profile</string>
+    <string name="avatar">avatar</string>
+</resources>
