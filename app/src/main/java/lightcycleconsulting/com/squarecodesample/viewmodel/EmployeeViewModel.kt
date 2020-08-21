@@ -34,7 +34,10 @@ class EmployeeViewModel(application: Application) : AndroidViewModel(application
          val endpoint = (getApplication() as Context).getString(R.string.get_employees_valid_data)
          viewModelScope.launch(Dispatchers.IO) {
             resource = try {
-                Resource.success(data = EmployeeApiManager().getEmployeesCoroutines(getApplication(), endpoint))
+                val employees = EmployeeApiManager().getEmployeesCoroutines(getApplication(), endpoint)
+                employees.employees.sortBy {
+                    it.fullName.split(" ")[1] }
+                Resource.success(data = employees)
             } catch (exception: Exception) {
                 Resource.error(data = Employees(ArrayList()), message = exception.message ?: "Error Occurred!"
                 )
